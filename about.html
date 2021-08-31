@@ -7,6 +7,7 @@
     <meta name="description" content="Web programing class" />
     <meta name="keywords" content="HTML,CSS,JS,Node JS,Express,Jquery,Ajax" />
     <link rel="icon" type="image/png" href="resource/image/profile.jpg" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         .about_me_header {
             background-color: darkslategrey;
@@ -23,6 +24,7 @@
         
         .body_page {
             background-color: black;
+            text-align: center
         }
         
         .btn {
@@ -33,6 +35,7 @@
         
         .ul {
             color: white;
+            list-style-type: none;
         }
         
         .a {
@@ -52,8 +55,8 @@
     </header>
     <br>
     <section class="about_me_header">
-        <h2>My Compro program courses</h2>
-        <ol>
+        <h3>My Compro program courses</h3>
+        <ul class="ul">
             <li>Fundimental Programm Practice</li>
             <li>Modern Programm Practice</li>
             <li>Design and Analysis of Algorithms</li>
@@ -61,12 +64,12 @@
             <li>Mobile device programming</li>
             <li>Modern web applications</li>
 
-        </ol>
+        </ul>
 
     </section>
     <br>
     <section class="about_me_header">
-        <h2>My Favorite Movies</h2>
+        <h3>My Favorite Movies</h3>
         <p>I love watching Adventure and family drama movies</p>
         <ul class="ul">
             <li><a class="a" href="https://www.imdb.com/title/tt0241527/?ref_=fn_al_tt_1">Harry Potter</a></li>
@@ -77,10 +80,44 @@
         </ul>
 
     </section>
-    <div style="margin: 5%; text-align: center;">
-        <button role="button" class="btn" onclick="window.open('https://nhattybirhanu.github.io/wap','_self')">Back to home page</button>
+    <br>
 
-    </div>
+    <section class="about_me_header">
+        <h2>My Mood</h2>
+        <div>
+            <table style="margin-left: auto;
+            margin-right: auto;">
+                <tr>
+                    <td style="text-align:center;  ">
+                        <h2>Happy</h2>
+                        <img src="resource/image/happy.jfif" width="500px" height="300px">
+                    </td>
+                    <td>
+                        <h2>Sad</h2>
+                        <img src="resource/image/sad.png" width="500px" height="300px">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    <br>
+
+    <section class="about_me_header">
+        <h3>Fun fact</h3>
+        <ul class="ul">
+            <li><b>SineWork Shiferaw</b> :He's the nicest chef I've ever met, and he'll be opening a tech restaurant shortly. </li>
+            <li><b>Lulit Hailemariam</b> :She adores algorithms and has a logn running time. </li>
+
+        </ul>
+    </section>
+    <br>
+    <section class="about_me_header">
+        <h2>Thank you for your visit.</h2>
+        <div style="margin: 5%; text-align: center;">
+            <button type="button" class="btn" onclick="window.open('https://nhattybirhanu.github.io/wap','_self')"><i class="fas fa-cloud"></i> Back to home page</button>
+        </div>
+    </section>
 </body>
 
 </html>
