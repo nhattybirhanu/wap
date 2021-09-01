@@ -8,40 +8,7 @@
     <meta name="keywords" content="HTML,CSS,JS,Node JS,Express,Jquery,Ajax" />
     <link rel="icon" type="image/png" href="resource/image/profile.jpg" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        .about_me_header {
-            background-color: darkslategrey;
-            color: white;
-            padding: 2%;
-            font-size: larger;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        .about_section {
-            background-color: darkgray;
-            color: whitesmoke;
-        }
-        
-        .body_page {
-            background-color: black;
-            text-align: center
-        }
-        
-        .btn {
-            background-color: white;
-            color: darkslategrey;
-            font-size: x-large;
-        }
-        
-        .ul {
-            color: white;
-            list-style-type: none;
-        }
-        
-        .a {
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="resource/css/styleme.css" type="text/css" />
 
 </head>
 
@@ -71,13 +38,83 @@
     <section class="about_me_header">
         <h3>My Favorite Movies</h3>
         <p>I love watching Adventure and family drama movies</p>
-        <ul class="ul">
-            <li><a class="a" href="https://www.imdb.com/title/tt0241527/?ref_=fn_al_tt_1">Harry Potter</a></li>
-            <li><a class="a" href="https://www.imdb.com/title/tt6468322/?ref_=ext_shr_lnk">Money heist</a></li>
-            <li><a class="a" href="https://www.imdb.com/title/tt7414406/?ref_=fn_al_tt_1">All American</a></li>
-            <li><a class="a" href="https://www.imdb.com/title/tt1458175/?ref_=ext_shr_lnk">The next three days</a></li>
+        <ol reversed>
+            <li><a href="https://www.imdb.com/title/tt0241527/?ref_=fn_al_tt_1">Harry Potter</a>
+                <ul class="ul_details">
+                    <li>Director
+                        <li class="li_details">
+                            <p>Chris Columbus</p>
+                        </li>
+                    </li>
+                    <li>Genre
+                        <li class="li_details">
+                            <p>Adventure, Family,Fantacy</p>
+                        </li>
+                    </li>
+                    <li>Tagline
+                        <li class="li_details">
+                            <p>Hidden deep within in the school lies an object that can make you immortal,that can make you powerful,that can make you deadly!</p>
+                        </li>
+                    </li>
+                    <li>Plot outline
+                        <li class="li_details">
+                            <p>An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.</p>
+                        </li>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.imdb.com/title/tt6468322/?ref_=ext_shr_lnk">Money heist</a>
+                <ul class="ul_details">
+                    <li>Director
+                        <li class="li_details">
+                            <p>
+                                Álex Pina</p>
+                        </li>
+                    </li>
+                    <li>Genre
+                        <li class="li_details">
+                            <p>Action ,Crime,Mystery, Thriller</p>
+                        </li>
+                    </li>
+                    <li>Tagline
+                        <li class="li_details">
+                            <p> La casa de papel</p>
+                        </li>
+                    </li>
+                    <li>Plot outline
+                        <li class="li_details">
+                            <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
+                        </li>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.imdb.com/title/tt1458175/?ref_=ext_shr_lnk">The next three days</a>
+                <ul class="ul_details">
+                    <li>Director
+                        <li class="li_details">
+                            <p>Paul Haggis</p>
+                        </li>
+                    </li>
+                    <li>Genre
+                        <li class="li_details">
+                            <p>Action ,Crime,Drama,Romance,Thriller</p>
+                        </li>
+                    </li>
+                    <li>Tagline
+                        <li class="li_details">
+                            <p>Lose who you are to save what you love.
+                            </p>
+                        </li>
+                    </li>
+                    <li>Plot outline
+                        <li class="li_details">
+                            <p>A married couple's life is turned upside down when the wife is accused of a murder.</p>
+                        </li>
+                    </li>
+                </ul>
+            </li>
 
-        </ul>
+        </ol>
 
     </section>
     <br>
@@ -106,8 +143,12 @@
     <section class="about_me_header">
         <h3>Fun fact</h3>
         <ul class="ul">
-            <li><b>SineWork Shiferaw</b> :He's the nicest chef I've ever met, and he'll be opening a tech restaurant shortly. </li>
-            <li><b>Lulit Hailemariam</b> :She adores algorithms and has a logn running time. </li>
+            <li><b>SineWork Shiferaw</b> :
+                <p>he's the nicest chef I've ever met, and he'll be opening a tech restaurant shortly.</p>
+            </li>
+            <li><b>Lulit Hailemariam :</b>
+                <p>she adores algorithms and has a logn running time. </p>
+            </li>
 
         </ul>
     </section>
@@ -117,6 +158,15 @@
         <div style="margin: 5%; text-align: center;">
             <button type="button" class="btn" onclick="window.open('https://nhattybirhanu.github.io/wap','_self')"><i class="fas fa-cloud"></i> Back to home page</button>
         </div>
+    </section>
+    <section class="about_me_header">
+        <a href="http://validator.w3.org/check?uri=https://nhattybirhanu.github.io/wap/about.html">
+            <img src="resource/image/w3c-html.png" alt="HTML">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check?uri=https://nhattybirhanu.github.io/wap/resource/styleme.css">
+            <img src="resource/image/w3c-css.png" alt="CSS">
+
+        </a>
     </section>
 </body>
 
