@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrive Grade</title>
+    <style type="text/css">
+        .container2 {
+            width: 400px;
+            margin: auto;
+            font-size: larger
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container2">
+        <h1>Retrive your grade</h1>
+        <form method="post" action="http://mumstudents.org/params.php">
+            <label for="name">Student Name</label>
+            <input type="text" name="name">
+            <br>
+            <br>
+            <label for="stu_id">Student ID</label>
+            <input type="text" class="form-control" name="stu_id">
+            <br>
+            <br>
+            <label for="assigment">Assigment</label>
+
+            <select name="assigment" class="form-control
+            " id="assigment">
+                <option value="Recipe">Recipe</option>
+                <option value="Movie">Movie</option>
+                <option value="HTML Forms">HTML Forms</option>
+                <option value="Calculator">Calculator</option>
+              </select>
+            <br>
+            <br>
+            <label for="entry" id="feb">Entry</label>
+            <input type='radio' id="feb" name='entry' value="February">February
+            <input type='radio' name='entry' value="May">May
+            <input type='radio' name='entry' value="August">August
+            <input type='radio' name='entry' value="November">November
+            <br>
+            <br>
+            <label for="confirm" id="feb">Please Confirm that you are  here to check only your grade </label>
+            <input type="checkbox" id="confirm" name="confirm">
+            <br>
+            <br>
+            <button type="submit">Check </button>
+        </form>
+
+    </div>
+</body>
+
+</html>
