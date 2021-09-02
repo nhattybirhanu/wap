@@ -1,0 +1,113 @@
+body {
+    background-image: url("http://127.0.0.1:5500/resource/image/background.png");
+    font-size: 8pt;
+    font-family: Verdana;
+    text-align: center;
+    height: 100%;
+}
+
+.mycontaier {
+    position: relative;
+    width: 800px;
+    border: gray solid;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.left_container {
+    width: 550px;
+    float: left;
+}
+
+.right_container {
+    width: 250px;
+    float: right;
+    background-color: #A2B964;
+    font-size: 8pt;
+    font-family: Arial;
+}
+
+.float_left {
+    width: 50%;
+    float: left;
+}
+
+.float_right {
+    width: 50%;
+    float: right;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.movie_overview {
+    float: right
+}
+
+.topbg {
+    margin: top 0dp;
+    float: left;
+    width: 100%;
+    background-image: url("http://127.0.0.1:5500/resource/image/rbg.png");
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    text-align: left;
+}
+
+.comment_box {
+    margin: 2%;
+    font-size: 8pt;
+    background-color: #E8DC98;
+    border-color: gray;
+    border-radius: 10px;
+    padding: 8px;
+    border: solid;
+    border-block-width: 2px;
+    text-align: justify;
+}
+
+.comment_person {
+    text-align: left;
+}
+
+p img {
+    padding-right: 5px;
+    float: left;
+}
+
+dt {
+    text-align: left;
+    padding: 4pt;
+    font-weight: bold;
+}
+
+dl dd {
+    margin-bottom: 10pt;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.validator {
+    position: relative;
+    float: right;
+    bottom: 60px;
+}
+
+.foot {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #A2B964;
+    float: bottom;
+    padding: 1px;
+    margin: 0px;
+    text-align: center;
+}
