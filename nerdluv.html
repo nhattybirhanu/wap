@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerdluv Sign up</title>
+    <link rel="stylesheet" href="resource/css/nerdluvcss.css" type="text/css">
+</head>
+
+<body>
+    <div class="myform">
+        <form>
+
+            <div class="left">
+
+                <label for="name">Name</label> <br><br>
+                <label for="gender">Gender</label><br><br>
+                <label for="age">Age</label><br><br>
+                <label for="personality">Personality</label><br><br>
+
+                <label for="fav_os">Favorite OS</label><br><br>
+                <label for="seeking_age">Seeking Age</label><br><br>
+                <button type="submit">Sign up</button>
+            </div>
+
+            <div class="right">
+                <input type="text" name="name" maxlength="16" size="16"><br><br>
+                <label>Male</label> <input type="radio" name="gender">
+                <label>Female</label> <input type="radio" name="gender"><br><br>
+                <input type="text" name="age" maxlength="6" size="6"><br><br>
+                <input type="text" name="personality" maxlength="4" size="4"> (
+                <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type?</a>)
+                <br>
+                <br>
+                <select name="fav_os" class="form-control
+                " id="fav_os">
+                    <option value="Windows">Windows</option>
+                    <option value="Mac OS">Mac OS</option>
+                    <option value="Linux">Linux</option>
+                  </select>
+                <br>
+                <br>
+                <input type="text" name="min" placeholder="min" size="2" maxlength="2">
+                <label> to </label> <input type="text" name="max" size="2" placeholder="max" max="2">
+                <br>
+            </div>
+        </form>
+    </div>
+    <div class="wel">New user SignUp :</div>
+
+</body>
+
+</html>
