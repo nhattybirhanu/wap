@@ -49,7 +49,6 @@ h1 {
 }
 
 .topbg {
-    margin: top 0dp;
     float: left;
     width: 100%;
     background-image: url("http://127.0.0.1:5500/resource/image/rbg.png");
