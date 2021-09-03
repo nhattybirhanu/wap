@@ -49,3 +49,17 @@ button {
     color: black;
     font-size: larger;
 }
+
+.bottom {
+    width: 400px;
+    margin: auto;
+}
+
+.bottom img {
+    text-align: center;
+}
+
+.txtcenter {
+    color: #EB7889;
+    text-align: justify;
+}
