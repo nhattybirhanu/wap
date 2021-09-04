@@ -3,34 +3,11 @@
 
 <head>
     <title>Natnael Ajema</title>
-    <meta name="viewport" content="width=device-width, initial-" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Web programing class" />
     <meta name="keywords" content="HTML,CSS,JS,Node JS,Express,Jquery,Ajax" />
     <link rel="icon" type="image/png" href="resource/image/profile.jpg" />
-    <style>
-        .avatar {
-            vertical-align: middle;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-        
-        .body_page {
-            background-color: black;
-            color: aliceblue;
-            text-align: center
-        }
-        
-        .ul {
-            width: auto;
-            color: white;
-            list-style-type: none;
-        }
-        
-        .a {
-            color: aqua;
-        }
-    </style>
+    <link rel="stylesheet" href="resource/css/indexcss.css">
 
 </head>
 
@@ -58,7 +35,17 @@
             <li><a class="a" href="recipe.html">Recipe page</a></li>
             <li><a class="a" href="tmnt.html">Movie review</a></li>
             <li><a class="a" href="nerdluv.html">Nerdluv sign up</a></li>
-            <li>Lab 6 </li>
+            <li class="li collapsible">Bugs</li>
+            <div class="content">
+                <ul>
+                    <li><a href="buggy1.html">Buggy page 1</a></li>
+                    <li><a href="buggy2.html">Buggy page 2</a></li>
+                    <li><a href="buggy3.html">Buggy page 3</a></li>
+                    <li><a href="buggy4.html">Buggy page 4</a></li>
+
+                </ul>
+            </div>
+            </li>
             <li>Lab 7 </li>
             <li>Lab 8 </li>
             <li>Lab 9 </li>
@@ -78,6 +65,21 @@
             <img src="resource/image/w3c-html.png" alt="html validator" /></a>
     </footer>
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 
 </html>

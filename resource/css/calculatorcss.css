@@ -1,0 +1,20 @@
+.cal {
+    width: 300px;
+    margin: auto;
+    font-weight: bold;
+    font-size: larger;
+}
+
+label {
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    font-size: larger;
+}
+
+input {
+    margin: 8dp;
+    padding: 8px;
+}

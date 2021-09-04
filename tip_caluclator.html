@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/calculatorcss.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="cal">
+
+        <img src="resource/image/calc.jpg">
+        <h3>Tip Calculator</h3>
+        <input type="text" id="total"> <label> $ Subtotal</label><br><br>
+        <input type="text" id="tip"> <label> % Tip</label><br><br>
+        <button type="button" onclick="calculate()">Calulate tip</button> <br><br>
+        <hr>
+        <h2>Your total</h2>
+        <lable id="result"></lable>
+
+    </div>
+</body>
+<script type="text/javascript">
+    function calculate() {
+        var total = document.getElementById("total");
+        var tip = document.getElementById("tip");
+        var result_tv = document.getElementById("result");
+        var tip_result = (total.value * (tip.value / 100)) + total.value;
+        result_tv.innerText = "$" + tip_result;
+    }
+</script>
+
+</html>
