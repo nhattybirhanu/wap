@@ -17,14 +17,14 @@
     list-style-type: none;
 }
 
-.a {
+a {
     color: aqua;
 }
 
 .collapsible {
     cursor: pointer;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     text-decoration: underline;
     color: aqua;
@@ -40,5 +40,14 @@
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: darkslategrey;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content a {
+    text-decoration: underline;
+    color: whitesmoke;
 }

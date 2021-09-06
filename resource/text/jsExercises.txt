@@ -1,0 +1,17 @@
+1 The first line function will call the booyah function after 2 seconds, however the second call will be made immediately;
+
+2 alert(x) will display the function property but alert(y(2,3)) will display the result which 6.
+
+3 
+ function booyah1(){
+	alert("BOOYAH!");
+	}
+ function booyah2(){
+		alert("BOOYAH!");
+	}
+
+
+4unobtrusive JavaScript is a technique of creating JavaScript so that your site visitors aren't locked out because of one of these issues—even 
+if your JavaScript isn't working properly for them, they should still be able to use your site at a basic level. Separation of concerns,
+ in the sense that the HTML markup is now free of traces of javascript. The time it takes for a page to load has improved. 
+It's also simple to update the code because all of the Javascript functionality is contained in its own file.
