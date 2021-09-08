@@ -1,0 +1,14 @@
+.container {
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+}
+
+.container textarea {
+    padding: 8px;
+    margin: auto;
+}
+
+.container button {
+    margin: 8dp
+}
