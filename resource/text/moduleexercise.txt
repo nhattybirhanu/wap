@@ -57,28 +57,26 @@
   
 
 10)
-var company = (function() {
-    var employee = {
-        name: 'Nhatty',
-        age: '26',
-        salary: 130000,
-        setName: function(newName) { this.name = newName; },
-        setAge: function(newAge) { this.age = newAge },
-        getName: function() { return this.name },
-        getAge: function() { return this.age },
-        getSalary: function() { return this.salary },
-        increaseSalary: function(percentage) { return this.salary = this.getSalary() + this.getSalary() * (percentage / 100) },
-        setSalary: function(newSalary) { this.salary = newSalary },
-        incrementAge: function(percentage) { return this.salary += 1 }
-    }
+var employee = (function() {
+       var  name= '';
+        var age= 0;
+        var salary= 130000;
+        function(newName) setName{ this.name = newName; };
+         function(newAge) setAge { this.age = newAge };
+      function() getName { return this.name };
+      function() getAge { return this.age };
+       function() getSalary{ return this.salary };
+        function(percentage) increaseSalar{ return this.salary = this.getSalary() + this.getSalary() * (percentage / 100) };
+       function(newSalary)setSalary { this.salary = newSalary };
+        incrementAge= function(percentage) { return this.salary += 1 }
 
 
     return {
-        setName: employee.setName,
-        setAge: employee.setAge,
-        setSalary: employee.setSalary,
-        increaseSalary: employee.increaseSalary,
-        incrementAge: employee.incrementAge,
+        setName: setName,
+        setAge: setAge,
+        setSalary: setSalary,
+        increaseSalary: increaseSalary,
+        incrementAge: incrementAge,
 
     }
 
