@@ -1,0 +1,200 @@
+1)  undefined
+	8
+	8
+	9
+	10
+	1
+2) Variables and functions with global scope may be accessed and modified from anywhere,
+  but local scope variables and functions can only be accessible from within their function.	
+
+3) a) we can't access local variables which is inside function b and c from outside scope a;
+
+   b) var x=10;  // in scope a;
+		x=x+2;  // accessing x variables from scope a from  function b.
+
+	c) we can't access local variables of inner scope in function c;
+
+	d)	var x=10;  // in scope a;
+		var y=x*x;  // accessing x variables from scope a from  function c.
+
+	3) var z=1;  // in scope b;
+		var sum=z+2;  // accessing x variables from scope a from  function c.	
+
+4) 81
+   25
+5) aler will print 10  because of foo is not defined inside the function bar.
+
+6) var add = (function() {
+    var count = {
+        counter: 0,
+        add: function() {
+            return this.counter += 1;
+        },
+        reset: function() { return this.counter = 0; },
+    }
+    return count;
+
+	})()
+
+  7) the free varable in add function is var counter, 
+  free varables are referred by funcion which is not it's parameter or loccal varables,
+  in our context it is called by inner returning function (which is insidefound on add function)
+
+  8)
+    var add = function(inc) {
+    var counter = 0;
+
+    {
+        return function makeadder() {
+            return counter += inc;
+        };
+
+    }
+
+};
+
+  9)  make it local by modules
+  
+
+10)
+var company = (function() {
+    var employee = {
+        name: 'Nhatty',
+        age: '26',
+        salary: 130000,
+        setName: function(newName) { this.name = newName; },
+        setAge: function(newAge) { this.age = newAge },
+        getName: function() { return this.name },
+        getAge: function() { return this.age },
+        getSalary: function() { return this.salary },
+        increaseSalary: function(percentage) { return this.salary = this.getSalary() + this.getSalary() * (percentage / 100) },
+        setSalary: function(newSalary) { this.salary = newSalary },
+        incrementAge: function(percentage) { return this.salary += 1 }
+    }
+
+
+    return {
+        setName: employee.setName,
+        setAge: employee.setAge,
+        setSalary: employee.setSalary,
+        increaseSalary: employee.increaseSalary,
+        incrementAge: employee.incrementAge,
+
+    }
+
+
+}())
+
+
+11)  
+var empdata = function(){
+  
+	     var employee ={
+	        'nam': 'Nhatty',
+	        salary:16000,
+	        age:26,
+	
+	        getAge:function(){return this.age},
+	        getSalary:function(){return this.salary},
+	        getName:function(){return this.nam},
+	        setAge:function(newAge){age = newAge;},
+	        setSalary: function(newSalary){salary = newSalary},
+	        setName: function(newName){nam = newName},
+	        increaseSalary:function(percentage){return this.getSalary() + this.getSalary() * percentage}, 
+	        incrementAge: function() {return  this.getAge() + 10} 
+	     }
+	   function setName(name){
+	   return  employee.setName(name);
+	   
+	   }
+	       function increaseSalary(p){
+	         return  employee.increaseSalary(p);
+						
+	     }
+	  
+	     function setSalary(){
+	         return  employee.setSalary();
+			 
+	         }
+			    function incrementAge(){
+	         return  employee.incrementAge();
+						
+	     }
+	     function setAge(age){
+	             return  employee.setAge(age);
+				
+	             }
+	
+	
+	        return {
+	                 setName:  function(n){return setName(n)},
+	                 setSalary: function(s){return setSalary(s)},
+	                 setAge: function(a){return setAge(a)},
+	                 increaseSalary:function(n){return increaseSalary(n)},
+	                 incrementAge:function(){return incrementAge()}, 
+	        }
+	
+	 }();
+
+
+
+
+12)var emp = function(){
+  
+    var employee ={
+       'nam': 'John',
+       age:40,
+       salary:6000,
+
+       getAge:function(){return this.age},
+       getSalary:function(){return this.salary},
+       getName:function(){return this.nam},
+       setAge:function(newAge){age = newAge;},
+       setSalary: function(newSalary){salary = newSalary},
+       setName: function(newName){nam = newName},
+       
+    }
+
+  
+    function getSalary(){
+        return  employee.getSalary();
+         
+        }
+    function getAge(){
+            return  employee.getAge();
+            
+            }
+
+    employee.increaseSalary = function(percentage){return getSalary() +getSalary() * percentage}
+    employee.incrementAge = function() {return  getAge() + 10} ;
+
+       return employee
+
+}();
+
+13)var emp2= (function(){
+        emp.extension = function () {
+            var address;
+           emp.setAddres = function setAddress(newAddress){
+                address = newAddress;
+            }
+            emp.getAddres = function getAddress(){
+                return address;
+            }
+            };
+            return emp;
+        })(emp || {});
+        
+    
+    console.log(emp2);
+
+
+14) Error: Hattori
+
+15) Success: Hattori
+    Error: Yoshi
+
+16)   Success
+	  error
+	  Error caught
+
