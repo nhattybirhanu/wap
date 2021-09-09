@@ -190,7 +190,6 @@ var empdata = function(){
 14) Error: Hattori
 
 15) Success: Hattori
-    Error: Yoshi
 
 16)   Success
 	  error
