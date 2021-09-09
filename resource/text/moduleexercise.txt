@@ -24,15 +24,15 @@
    25
 5) aler will print 10  because of foo is not defined inside the function bar.
 
-6) var add = (function() {
-    var count = {
+6) var count = (function() {
+  return  {
         counter: 0,
         add: function() {
             return this.counter += 1;
         },
         reset: function() { return this.counter = 0; },
     }
-    return count;
+
 
 	})()
 
@@ -41,11 +41,11 @@
   in our context it is called by inner returning function (which is insidefound on add function)
 
   8)
-    var add = function(inc) {
+    var makeadder= function(inc) {
     var counter = 0;
 
     {
-        return function makeadder() {
+        return function() {
             return counter += inc;
         };
 
