@@ -1,3 +1,4 @@
+"use strict";
 var ANIMATIONS = { bike: BIKE, exercise: EXERCISE, dive: DIVE, juggler: JUGGLER, 'custom': CUSTOM };
 var tv = document.getElementById('textarea');
 var startbtn = document.getElementById('start');

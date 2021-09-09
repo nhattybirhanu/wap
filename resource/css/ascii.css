@@ -1,9 +1,8 @@
 .box {
     width: 100%;
-    margin: auto;
     background-color: #CCCCFF;
     text-align: center;
-    height: 100%;
+    height: inherit;
 }
 
 .playground {
@@ -39,5 +38,9 @@ h1 {
 }
 
 .validators {
+    background-color: #CCCCFF;
+    width: 100%;
+    text-align: right;
     float: right;
+    margin: left;
 }

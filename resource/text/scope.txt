@@ -1,0 +1,56 @@
+1)  10 
+     8
+	 8
+	 9
+	 10
+	 1
+2)A function's name can be used to invoke it directly. A method is a piece of code that may be called using dot notation or square bracket notation with the name of its object.
+A function can take the data that is being processed and return it.
+The method manipulates the data in a Class.
+Explicit data is provided to a function.
+The object on which a method was called is implicitly passed.
+A method is a function that is connected with an object attribute and exists on its own.
+
+3)In a method or constructor, the this keyword refers to the current object.
+ This keyword is most commonly used to distinguish between class characteristics 
+ and arguments with the same name (because a class attribute is shadowed by a method or constructor parameter).
+
+4)Invoker Object is referred to as "this" (Parent Object)
+A method or a simple value can be used as an object's property in JavaScript. When a method on an object is called, the object containing the method is referred to.
+
+5) This keyword is
+The object that "owns" the code in JavaScript is referred to as this. When used in an object, the value of this is the object itself.
+ This does not have a value in a constructor function. It's a stand-in for the new item.
+6) this refere to the variable inside function f;
+
+7) A free variable is a variable that is not defined within a function but is utilized within it.
+
+8) var obj={
+	name:"fred",
+	major:"music",
+	fun:function(a,b){
+
+		return a==b?a*b:(a>b?b:a);
+	}
+
+}
+
+9) function Employee(name,salary,poistion){
+	this.name=name;	
+	this.salary=salary
+	poistion=poistion;
+   } 
+
+   var amaha=new Employee("Amaha",20000,"Developer",);
+   var lulit=new Employee("Lulit",30000,"Designer",);
+   var nhatty=new Employee("Natanel",40000,"Java Developer",);
+
+   10) function(){
+		 var=  	product=1;
+	   	for(var i=0;i<arguments.length;i++)
+		{
+			product=product*arguments[i];
+		}
+		return product;
+   }
+   11) (a,b,c)=>(a>b&&a>c)?a:((b>c&&b>c)?b:(c>b&&c>a)?c);
