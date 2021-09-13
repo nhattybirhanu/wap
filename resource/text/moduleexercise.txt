@@ -138,21 +138,13 @@ var empdata = function(){
 
 
 12)var emp = function(){
-  
-    var employee ={
-       'nam': 'John',
-       age:40,
-       salary:6000,
-
-       getAge:function(){return this.age},
-       getSalary:function(){return this.salary},
-       getName:function(){return this.nam},
-       setAge:function(newAge){age = newAge;},
-       setSalary: function(newSalary){salary = newSalary},
-       setName: function(newName){nam = newName},
-       
-    }
-
+		var name,age,salary;
+		var getAge=function(){return this.age},
+    	var getSalary=function(){return this.salary},
+       	var getName=function(){return this.nam},
+       	var setAge=function(newAge){age = newAge;},
+        var setSalary= function(newSalary){salary = newSalary},
+        var setName= function(newName){nam = newName},
   
     function getSalary(){
         return  employee.getSalary();
