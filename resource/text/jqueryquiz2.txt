@@ -1,0 +1,21 @@
+1) The three code fragments each have a different return type from the iteration function, 
+ but the end effect is the same. The first code fragment contains the index and the value object, 
+ the value e and "this" are the same, "the" is the current value of object in the cureent index, 
+  the second code fragment returns nothing, and the last code fragment returns just the index,
+  both of which have the object.as a result, the functions are equivalent
+
+2)  <script>
+        $(document).ready(function() {
+            $("div").children("ul").each(function() {
+                $(this).css("color", "blue");
+            })
+
+
+        })
+    </script>
+3)    <script>
+        $(document).ready(function() {
+            $("body").append("<div><h1>JQuery Core</h1></div>");
+
+        })
+    </script>
