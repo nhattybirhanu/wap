@@ -78,6 +78,7 @@ function createGrid(i, ele) {
         eY = (Math.floor(empty / 4) * 100);
 
     }
+    done();
 
 }
 
@@ -130,4 +131,23 @@ function genrateRandom(list) {
     var val = list[ran];
     list.splice(ran, 1);
     return val
+}
+
+function done() {
+    var total = 0;
+    var win = true;
+    $("#puzzlearea").children("div").each(function(index, ele) {
+        let currentVal = $(ele).text();
+        console.log(currentVal + " " + total + win);
+        if (total + 1 == currentVal) {
+            total = total + currentVal;
+        } else {
+            win = false;
+            return false;
+        }
+
+    });
+    if (win) {
+        alert("Greate you solved the puzzle!");
+    }
 }
